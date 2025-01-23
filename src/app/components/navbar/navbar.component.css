@@ -26,7 +26,8 @@ a {
 .navbar {
   height: 5rem;
   width: 100vw;
-  position: fixed;
+  position: sticky;
+  /* position: fixed; */
   top: 0;
   z-index: 1000;
   display:flex;

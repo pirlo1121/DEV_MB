@@ -1,0 +1,80 @@
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #000000;
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    padding: 2rem;
+    /* gap: 10rem; */
+    flex-wrap: wrap; /* Para adaptar en dispositivos pequeños */
+}
+
+/* .card__item {
+    flex: 1; 
+} */
+
+.card__image {
+    flex: 0 0 300px; /* Define un ancho fijo para la imagen */
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__image .img {
+    width: 100%;
+    aspect-ratio: 1; /* Hace que sea siempre cuadrada */
+    border-radius: 50%; /* Hace la imagen completamente circular */
+    /* border: 4px solid #fff; */
+    border: 4px solid rgb(255, 255, 255);
+
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.card__info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: wheat;
+}
+
+.card__info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .card__image {
+        margin-bottom: 1rem;
+    }
+
+    .card__info h2 {
+        font-size: 1.8rem;
+    }
+
+    .card__info p {
+        font-size: 0.9rem;
+    }
+}
+
+pre {
+    /* background-color: #f4f4f4; */
+    padding: 10px;
+    font-size: 1.8rem;
+    color: white;
+    text-align: start;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: monospace;
+  }
