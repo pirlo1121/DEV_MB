@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './banner-home.component.css'
 })
 export class BannerHomeComponent {
+  msg: string = 'Maicol@linux-dev:~/Desktop$'
   jsonObject = {
     Name: 'Maicol Bautista',
     Age: 23,

@@ -21,7 +21,7 @@ export class BackgroundComponent {
       this.stars.push({
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
-        size: Math.random() * 3 + 1, // Tamaño aleatorio
+        size: Math.random() * 3 + 2, // Tamaño aleatorio
         duration: Math.random() * 2 + 1 // Duración aleatoria para el parpadeo
       });
     }
