@@ -1,48 +1,129 @@
-.home {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
-    color: #fff;
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background: #000000; */
+  background-color:#0D0D0D;
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.card__image {
+  flex: 0 0 300px; /* Define un ancho fijo para la imagen */
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__image .img {
+  width: 100%;
+  aspect-ratio: 1; /* Hace que sea siempre cuadrada */
+  border-radius: 50%; /* Hace la imagen completamente circular */
+  /* border: 4px solid rgb(255, 255, 255); */
+  cursor: pointer;
+  border: 4px solid rgb(137, 137, 137);
+  object-fit: cover;
+  transition: .4s ease-in-out;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+  object-position: bottom;
+  animation: movimientoPerpetuo 1.5s infinite ease-in-out;
+}
+.card__image .img:hover {
+  border: 4px solid rgb(0, 0, 0);
+  box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  transition: 0.4s ease;
+
+}
+
+
+
+
+.card__info {
+  padding: 20px;
+  border-radius: 20px 10px;
+  width: 100%;
+  max-width: 680px;
+  min-width: 300px;
+  background-color: #1e1e1e; /* Fondo oscuro */
+  color: #d4d4d4; /* Texto claro */
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+}
+
+.card__info h2 {
+  color: #569cd6; /* Azul para títulos */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+pre {
+  padding: 25px 20px;
+  background-color: #252526; /* Fondo del bloque JSON */
+  color: white;
+  border-radius: 10px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  text-align: start;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .card {
+      flex-direction: column;
+      text-align: center;
+      gap: 0rem;
   }
-  .container {
-    display: flex;
-    align-items: center;
-    background: #34495e;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    width: 90%;
-    gap: 2rem;
+  .card__info {
+      width: 400px;
   }
-  .container img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    object-fit: cover;
+
+  .card__info h2 {
+      font-size: 1.8rem;
   }
-  .content {
-    text-align: left;
+
+  .card__info p {
+      font-size: 0.9rem;
   }
-  .content h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+}
+
+
+
+
+@keyframes movimientoPerpetuo {
+  0% {
+      transform: translateY(0); /* Posición inicial */
   }
-  .content p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  50% {
+      transform: translateY(-10px); /* Sube */
   }
-  .content a {
-    text-decoration: none;
-    color: #1abc9c;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  100% {
+      transform: translateY(0); /* Vuelve a la posición inicial */
   }
-  .content a:hover {
-    color: #16a085;
+}
+
+.fade-in {
+  opacity: 0; /* Empieza invisible */
+  transform: translateY(20px); /* Empieza desplazado hacia abajo */
+  animation: fadeInAnimation 1.3s ease-out forwards; /* Aplica la animación */
+}
+
+/* Definición de la animación */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(40px); /* Comienza desde abajo */
   }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Llega a su posición final */
+  }
+}

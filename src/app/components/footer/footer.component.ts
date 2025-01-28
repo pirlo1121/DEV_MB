@@ -6,13 +6,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrl: './footer.component.css',
 })
 export class FooterComponent {
 
-  jsonObject = {
-    name: 'juanito',
-    age: 25,
-    country: 'Mexico'
-  };
 }
