@@ -15,4 +15,6 @@ export class BannerHomeComponent {
     Age: 23,
     Type: "Software Developer",
   };
+
+
 }
