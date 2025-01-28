@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: space-around;
   /* background: #000000; */
-  background-color:#0D0D0D;
+  /* background-color:#0D0D0D; */
+  background-color: transparent;
   box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2);
   overflow: hidden;
   height: 100vh;
@@ -79,13 +80,19 @@ pre {
 @media (max-width: 768px) {
   .card {
       flex-direction: column;
+      padding: 2rem 0;
+      justify-content: start;
       text-align: center;
-      gap: 0rem;
+      gap: 1rem;
   }
   .card__info {
-      width: 400px;
+      width: 350px;
   }
-
+  pre{
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
   .card__info h2 {
       font-size: 1.8rem;
   }
