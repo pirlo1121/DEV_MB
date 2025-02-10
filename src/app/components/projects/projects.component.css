@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Courier New", monospace;
+    color: var(--texts);
+    margin: 4rem 0;
+    padding: 20px;
+  }
+  
+  .terminal {
+    border: 1px solid var(--titles);
+    /* background-color: var(--backgrounds); */
+    border-radius: 8px;
+    padding: 25px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: var(--shadows);
+  }
+  
+  .title {
+    color: var(--titles);
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: var(--backgrounds);
+    border: 1px solid var(--titles);
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: var(--shadows);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out;
+
+  }
+  .project-image:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .card-content {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .card h2 {
+    color: var(--titles);
+    font-size: 18px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: var(--texts);
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--titles);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid var(--titles);
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .card a:hover {
+    background: var(--titles);
+    color: var(--backgrounds);
+  }
+  
+  @media (max-width: 768px) {
+    .terminal {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
