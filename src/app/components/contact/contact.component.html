@@ -1,12 +1,17 @@
 <div class="contact-card">
-    <h2 class="title">~$ ls -l Contact</h2>
+    <h2 class="title">
+        <span aria-hidden="true">~$ ls -l Contact</span>
+        <span class="sr-only">Información de contacto</span>
+    </h2>
 
 
-    <div class="info">
-        <a href="mailto:tucorreo@example.com" class="email">{{email}}</a>
+    <div class="info" *ngIf="email">
+        <a href="mailto:{{ email }}" class="email">{{ email }}</a>
     </div>
 
-    <a class="whatsapp-button" href="https://wa.me/3027420348" target="_blank">
-        <i class="fa fab fa-whatsapp"></i> Enviar mensaje
+    <a class="whatsapp-button" href="https://wa.me/3027420348" target="_blank" rel="noopener noreferrer"
+        aria-label="Enviar mensaje por WhatsApp a 3027420348">
+        <i class="fab fa-whatsapp"></i> Enviar mensaje
     </a>
+
 </div>
