@@ -1,10 +1,20 @@
-<!-- 3D Slideshow Section -->
-<section id="slideshow">
-    <div class="entire-content">
-        <div class="content-carrousel">
-            <figure class="shadow" *ngFor="let image of images; let i = index">
-                <img [src]="image" />
-            </figure>
+<section class="container">
+    <div class="terminal">
+        <h1 class="title" id="about-me">{{ title }}</h1>
+        <div class="content">
+            <pre>
+$ echo "<span class="typing">{{ displayText }}</span>"
+→ Soy Software Developer y Mentor Web 
+                
+$ ls -l habilidades
+ -NodeJs        -MongoDb
+ -JavaScript    -Bash
+ -Angular       -Python
+ -Typescript    -Express
+ -MVC           -Astro
+                
+$Programing...<span class="cursor"></span>
+            </pre>
         </div>
     </div>
 </section>

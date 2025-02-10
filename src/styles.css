@@ -5,8 +5,8 @@
     --backgrounds: #010710;
     --backgrounds--cards: rgb(27, 27, 27);
     --backgrounds--btns: #008cff;
-    --titles:  #569cd6;
-    /* --titles:  #008cff; */
+    /* --titles:  #569cd6; */
+    --titles:  #47a8f8;
     --texts:  #ffffff;
     --shadows:  0px 0px 20px #ffffff47;
   }
