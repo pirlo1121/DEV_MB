@@ -41,6 +41,8 @@
   padding: 20px;
   border-radius: 20px 10px;
   width: 100%;
+  border: 1px solid var(--titles);
+  justify-content: center;
   max-width: 1000px;
   min-width: 300px;
   background-color: var(--backgrounds--cards); 
@@ -51,7 +53,7 @@
   z-index: 1;
 }
 
-.card__info h2 {
+.card__info h1 {
   color: var(--titles); 
   font-size: 2rem;
   font-weight: bold;
@@ -68,16 +70,17 @@ pre {
   text-align: start;
   font-size: 2rem;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .btn {
+  text-decoration: none;
   padding: 10px 20px;
-  margin-top: 10px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   color: #000;
   background: var(--backgrounds--btns); 
-  border: none;
+  /* border: none; */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -112,10 +115,11 @@ pre {
     font-size: 1.2rem;
   }
 
-  .card__info h2, .icon__linux {
+  .card__info h1, .icon__linux {
     font-size: 1rem;
   } 
 }
+
 
 @media (max-width: 768px) {
   .card {
@@ -150,7 +154,7 @@ pre {
     min-width: 200px;
   }
 
-  pre, .card__info h2, .icon__linux {
+  pre, .card__info h1, .icon__linux {
     font-size: 0.8rem;
   }
 
