@@ -22,16 +22,16 @@
 }
 
 .title {
-  padding: 5px;
+  /* padding: 5px; */
   color: var(--titles);
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
 }
 
 .content {
   padding: 10px;
   font-size: 18px;
-  white-space: pre-line;
+  white-space: pre-wrap;
 }
 
 .typing {
@@ -41,8 +41,8 @@
 .cursor {
   display: inline-block;
   margin-left: 2px;
-  width: 8px;
-  height: 16px;
+  width: 0.5em;
+  height: 1em;
   background: var(--titles);
   animation: blink 0.8s infinite;
 }
@@ -67,8 +67,8 @@
 
 @media (max-width: 480px) {
   .terminal {
-    width: 100%;
-    padding: 15px;
+    max-width: 95%;
+    padding: 10px;
   }
 
   .content {

@@ -1,9 +1,10 @@
 <section class="container">
-    <div class="terminal">
+    <article class="terminal">
         <h1 class="title" id="about-me">{{ title }}</h1>
         <div class="content">
-            <pre>
-$ echo "<span class="typing">{{ displayText }}</span>"
+            <pre aria-label="Simulación de terminal">
+                <code>
+$ echo '<span class="typing">{{ displayText }}</span>' 
 
 → Software Developer 
 → Mentor Web 
@@ -24,7 +25,8 @@ $ ls -l habilidades
 
                 
 $Programing...<span class="cursor"></span>
+                </code>
             </pre>
         </div>
-    </div>
+    </article>
 </section>
