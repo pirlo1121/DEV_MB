@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -13,6 +14,13 @@ export class NavbarComponent {
   ngAfterViewInit(): void {
     this.toggleMenu();
   }
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
 
   private toggleMenu(): void {
     const navbar: HTMLElement | null = document.querySelector('.navbar');

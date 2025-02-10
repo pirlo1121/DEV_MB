@@ -4,11 +4,12 @@ import { BannerHomeComponent } from '../../components/banner-home/banner-home.co
 import { Card2Component } from '../../components/card2/card2.component';
 import { AboutMeComponent } from '../../components/about-me/about-me.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
+import { ContactComponent } from '../../components/contact/contact.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ NavbarComponent, BannerHomeComponent, Card2Component, AboutMeComponent, ProjectsComponent],
+  imports: [ NavbarComponent, BannerHomeComponent, Card2Component, AboutMeComponent, ProjectsComponent, ContactComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

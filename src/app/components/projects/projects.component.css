@@ -3,13 +3,14 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: "Courier New", monospace;
     color: var(--texts);
     margin: 4rem 0;
     padding: 20px;
   }
   
   .terminal {
+    background-color: var(--backgrounds);
+
     border: 1px solid var(--titles);
     /* background-color: var(--backgrounds); */
     border-radius: 8px;
@@ -70,7 +71,7 @@
   }
   
   .card p {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--texts);
   }
   

@@ -1,0 +1,88 @@
+
+  .contact-card {
+    box-shadow: var(--shadows);
+    border: 2px solid var(--titles);
+    padding: 20px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: var(--shadows);
+    max-width: 500px;
+    margin:20px auto;
+  }
+  
+  .title {
+    color: var(--titles);
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  
+  .email {
+    color: var(--texts);
+    font-size: 1.5rem;
+    /* margin: 50px 0; */
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: var(--shadows);
+    transition: 0.3s;
+  }
+  
+  .email:hover {
+    color: var(--titles);
+    text-shadow: 0px 0px 15px var(--titles);
+  }
+  
+  .whatsapp-button {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--backgrounds--btns);
+    color: var(--texts);
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: var(--shadows);
+    transition: 0.3s;
+    margin:10px  auto;
+  }
+  
+  .whatsapp-button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 25px var(--titles);
+  }
+  
+  .whatsapp-button i {
+    font-size: 24px;
+  }
+  @media (max-width:500px) {
+
+  .contact-card {
+    width: 350px;
+  }
+  .title {
+
+    font-size: 18px;
+  }
+  .email{
+    font-size: 1.3rem;
+  }
+  .whatsapp-button{
+    font-size: 15px;
+  }
+  .whatsapp-button i {
+    font-size: 20px;
+  }
+
+  
+}

@@ -2,27 +2,20 @@
     <button class="burger">
         <span class="bar"></span>
     </button>
-    <ul>
-        <li><a class="logo" routerLink="/tienda">{{title}}</a></li>
 
+    <ul>
+        <li><a class="logo" (click)="scrollToSection('home')">{{title}}</a></li>
     </ul>
 
     <ul class="navbar__links">
         <li class="navbar__link second">
-            <a class="links_menu" routerLink="/talleres">About me</a>
+            <a class="links_menu" (click)="scrollToSection('about')">About me</a>
         </li>
         <li class="navbar__link first">
-            <a class="links_menu" routerLink="/tienda">Projects</a>
+            <a class="links_menu" (click)="scrollToSection('projects')">Projects</a>
         </li>
         <li class="navbar__link third">
-            <a class="links_menu" routerLink="/servicios">Contact</a>
+            <a class="links_menu" (click)="scrollToSection('contact')">Contact</a>
         </li>
-    </ul>
-
-    <ul class="redes">
-        <a href="" class="redes__link"><i class="redes__icons fa fa-brands fa-instagram"
-                style="color: #ffffff;"></i></a>
-        <a href="" class="redes__link"><i class="redes__icons fa fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-        <a href="" class="redes_link"><i class="redes__icons fa fa-brands fa-github" style="color: #ffffff;"></i></a>
     </ul>
 </nav>
