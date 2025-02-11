@@ -4,8 +4,11 @@
 :root {
     --backgrounds: #010710;
     --backgrounds--cards: rgb(27, 27, 27);
+    /* --backgrounds--cards: rgb(255, 154, 154); */
+
     --backgrounds--btns: #008cff;
-    --titles:  #47a8f8;
+    /* --titles:  #47a8f8; */
+    --titles:  #3576f8;
     --texts:  #ffffff;
     --shadows:  0px 0px 20px #ffffff47;
   }
@@ -16,12 +19,3 @@
     box-sizing: border-box;
     font-family: "Courier New", monospace;
 }
-
-/* 
-    colores-------
-    backgrounds #010710
-    titles      #569cd6
-    texts       #ffffff
-    shodows     0px 0px 50px #ffffff8b;
-
-*/
