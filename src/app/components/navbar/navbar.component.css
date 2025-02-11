@@ -55,6 +55,16 @@ a {
   align-items: center;
   gap: 0 .7em;
 }
+.redes__link {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.redes__link:hover {
+  color: var(--titles); /* Color de hover */
+}
 .redes__icons{
   font-size: 1.6rem;
 }
