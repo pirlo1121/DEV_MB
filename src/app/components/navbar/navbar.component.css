@@ -63,7 +63,7 @@ a {
 }
 
 .redes__link:hover {
-  color: var(--titles); /* Color de hover */
+  opacity: 0.8; /* Color de hover */
 }
 .redes__icons{
   font-size: 1.6rem;

@@ -37,6 +37,10 @@
 .typing {
   font-weight: bold;
 }
+.ls-list{
+  color: var(--titles);
+
+}
 
 .cursor {
   display: inline-block;
@@ -56,7 +60,7 @@
 
 @media (max-width: 768px) {
   .terminal {
-    width: 90%;
+    width: 100%;
     padding: 20px;
   }
 
@@ -67,7 +71,6 @@
 
 @media (max-width: 480px) {
   .terminal {
-    max-width: 95%;
     padding: 10px;
   }
 

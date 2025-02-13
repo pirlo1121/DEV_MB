@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: transparent;
   overflow: hidden;
   height: 750px;
   flex-wrap: wrap;
@@ -45,7 +44,9 @@
   justify-content: center;
   max-width: 1000px;
   min-width: 300px;
-  background-color: var(--backgrounds--cards); 
+  /* background-color: var(--backgrounds--cards);  */
+  background-color: var(--backgrounds);
+
   color: #d4d4d4; 
   font-family: 'Courier New', Courier, monospace;
   box-shadow: var(--shadows);
@@ -79,17 +80,18 @@ pre {
   font-size: 12px;
   font-weight: bold;
   color: #000;
-  background: var(--backgrounds--btns); 
-  /* border: none; */
+  background: var(--backgrounds--btns);
+  color: var(--texts);
+  box-shadow: var(--shadows);
+  transition: 0.3s;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .btn:hover {
-  opacity: 0.9;
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 25px var(--titles);
 }
-
 .card__title {
   gap: 10px;
   display: flex;
