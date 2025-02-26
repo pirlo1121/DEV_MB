@@ -16,14 +16,16 @@ export class ProjectsComponent {
       description: 'Ecommerce de venta de productos de manicure',
       tech: ['Angular', 'Express', 'TypeScript', 'MongoDb','Node.js'],
       image: 'https://files-portoflio.s3.us-east-1.amazonaws.com/nails.jpg',
-      link: 'http://nails-bit.s3-website-us-west-1.amazonaws.com/',
+      link: 'https://github.com/pirlo1121/Nails_Front'
+      // link: 'http://nails-bit.s3-website-us-west-1.amazonaws.com/',
     },
     {
       title: 'Pets Found',
       description: 'Web para buscar mascotas perdidas en argentina',
       tech: ['Angular', 'NGRX', 'RXJS', 'boostrap'],
       image: 'https://files-portoflio.s3.us-east-1.amazonaws.com/pet.png',
-      link: 'http://09us.s3-website-us-east-1.amazonaws.com/',
+      link: 'https://github.com/FooTalent/team-11'
+      // link: 'http://09us.s3-website-us-east-1.amazonaws.com/',
     },
     {
       title: 'Send Poems',

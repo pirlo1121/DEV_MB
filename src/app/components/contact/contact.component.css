@@ -2,6 +2,7 @@
   .contact-card {
     box-shadow: var(--shadows);
     border: 2px solid var(--titles);
+    background-color: var(--backgrounds);
     padding: 20px;
     /* text-align: center; */
     display: flex;
