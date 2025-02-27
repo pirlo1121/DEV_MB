@@ -30,7 +30,7 @@ a {
   padding:10px;
   font-size:1.2rem;
   font-family: 'Montserrat', sans-serif;
-  background:var(--backgrounds);
+  background:var(--backgroundBody);
   color:var(--navbar-color);
   margin: 0;
 
@@ -57,7 +57,7 @@ a {
 }
 .redes__link {
   text-decoration: none;
-  color: white;
+  color: var(--texts);
   font-size: 24px;
   transition: color 0.3s ease;
 }

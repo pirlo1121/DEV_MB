@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-banner-home',
@@ -16,5 +17,9 @@ export class BannerHomeComponent {
     Type: "Software Developer",
   };
 
+  constructor(private themeService: ThemeService) {}
+  toggleTheme() {
+    this.themeService.toggleTheme();
+  }
 
 }

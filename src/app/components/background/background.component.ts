@@ -16,7 +16,7 @@ export class BackgroundComponent {
   }
 
   createStars() {
-    const numberOfStars = 500;
+    const numberOfStars = 800;
     for (let i = 0; i < numberOfStars; i++) {
       this.stars.push({
         x: Math.random() * window.innerWidth,

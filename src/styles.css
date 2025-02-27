@@ -1,17 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
 
+
 :root {
+  --backgroundBody: #050a14;
+  --backgrounds: #0b1428;
+  --backgrounds--cards: #050a14;
+  --backgrounds--btns: #4ca6ff;
+  --titles: #7ecbff;
+  --texts: #d4f0ff;
+  --border: white;
+  --shadows: 0px 0px 23px #4ca6ff5e;
+}
+
+.light-theme {
+  --backgroundBody: rgb(230, 230, 230);
+  --backgrounds: rgb(255, 255, 255); /* Blanco muy suave para evitar fatiga visual */
+  --backgrounds--cards: #e0e0e0; /* Gris claro para diferenciar tarjetas */
+  --backgrounds--btns: #a0a0a0; /* Botón en gris medio para contraste sutil */
+  --titles: #2c2c2c; /* Casi negro, para títulos con buena legibilidad */
+  --texts: #1a1a1a; /* Negro suave, ideal para lectura */
+  --border: #000000; /* Bordes negros para resaltar estructura */
+  --shadows: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra negra tenue */
+}
+
+
+
+
+/* :root {
     --backgrounds: #010710;
     --backgrounds--cards: rgb(27, 27, 27);
     --backgrounds--btns: #008cff;
-
-    /* --titles:  #0077ff; */
     --titles: rgb(39, 136, 246);
     --texts:  #ffffff;
     --shadows:  0px 0px 20px #ffffff5e;
 
-  }
+  } */
+
+ /* :root {
+  --backgrounds: #0c162d;
+  --backgrounds--cards: #1c2541;
+  --backgrounds--btns: #5bc0be;
+  --titles: #9fffe0;
+  --texts: #d6f6ff;
+  --shadows: 0px 0px 25px #5bc0be5e;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 *{
     padding: 0;
