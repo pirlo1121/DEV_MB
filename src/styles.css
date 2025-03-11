@@ -21,46 +21,8 @@
   --titles: #2c2c2c; /* Casi negro, para títulos con buena legibilidad */
   --texts: #1a1a1a; /* Negro suave, ideal para lectura */
   --border: #000000; /* Bordes negros para resaltar estructura */
-  --shadows: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra negra tenue */
+  --shadows: 0px 0px 25px rgba(0, 0, 0, 0.2); /* Sombra negra tenue */
 }
-
-
-
-
-/* :root {
-    --backgrounds: #010710;
-    --backgrounds--cards: rgb(27, 27, 27);
-    --backgrounds--btns: #008cff;
-    --titles: rgb(39, 136, 246);
-    --texts:  #ffffff;
-    --shadows:  0px 0px 20px #ffffff5e;
-
-  } */
-
- /* :root {
-  --backgrounds: #0c162d;
-  --backgrounds--cards: #1c2541;
-  --backgrounds--btns: #5bc0be;
-  --titles: #9fffe0;
-  --texts: #d6f6ff;
-  --shadows: 0px 0px 25px #5bc0be5e;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 *{
     padding: 0;
