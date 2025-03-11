@@ -17,9 +17,16 @@ export class BannerHomeComponent {
     Type: "Software Developer",
   };
 
+  isLightTheme: boolean = false;
+
   constructor(private themeService: ThemeService) {}
-  toggleTheme() {
-    this.themeService.toggleTheme();
+
+  ngOnInit(): void {
+    this.isLightTheme = localStorage.getItem('theme') === 'light';
   }
 
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
+    this.isLightTheme = !this.isLightTheme;
+  }
 }

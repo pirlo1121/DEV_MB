@@ -20,4 +20,5 @@ export class ThemeService {
       document.documentElement.classList.add(this.lightThemeClass);
     }
   }
+
 }

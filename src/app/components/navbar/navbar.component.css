@@ -12,7 +12,7 @@ ul {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0;
-    color: rgb(255, 255, 255);
+    color: var(--titles);
 }
 a {
     cursor: pointer;
