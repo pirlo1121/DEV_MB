@@ -18,6 +18,11 @@
             <div class="card_cv">
                 <a href="https://files-portoflio.s3.us-east-1.amazonaws.com/CV-Maicol-Bautista.pdf" download
                     class="btn">DOWNLOAD CV</a>
+                <button (click)="toggleTheme()" class="theme-toggle">
+                    <i *ngIf="isLightTheme" class="fas fa-sun"></i>
+                    <i *ngIf="!isLightTheme" class="fas fa-moon"></i>
+                </button>
+                    
             </div>
 
         </div>
